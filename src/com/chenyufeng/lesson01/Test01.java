@@ -11,6 +11,14 @@ public class Test01 {
 	static String type;
 	
 	public static void main(String[] args) {
+		//输入数据
+		input();
+		
+		System.out.println("我是"+name+";我是"+sex+"的"+"今年我"+age+"岁"+"我的身高是"+height+"我的性格是"+type);
+	}
+	
+	//封装成一个方法
+	static void input(){
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("姓名：");
 		name = scanner.next();
@@ -23,8 +31,6 @@ public class Test01 {
 		System.out.println("性格：");
 		type = scanner.next();
 		
-		System.out.println("我是"+name+";我是"+sex+"的"+"今年我"+age+"岁"+"我的身高是"+height+"我的性格是"+type);
 		scanner.close();
 	}
-
 }
