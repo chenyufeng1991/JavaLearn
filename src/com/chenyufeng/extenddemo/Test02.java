@@ -8,6 +8,7 @@ class A{
 
 class B extends A{
 	public B() {
+//		super(); //可以不加super(), 因为在构造函数中，编译中会自动加上这个super(),所以会默认去调用父类的构造函数
 		System.out.println("B con");
 	}
 }
